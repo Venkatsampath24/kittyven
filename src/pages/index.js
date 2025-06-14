@@ -13,7 +13,7 @@ export default function WeddingInvitation() {
  useEffect(() => {
   if (!entered || step >= 4) return;
 
-  const stepDurations = [5000, 4000, 20000, 20000]; // durations in milliseconds
+  const stepDurations = [5000, 4000, 20000, 10000]; // durations in milliseconds
 
   const timeout = setTimeout(() => {
     setStep((prev) => (prev < 4 ? prev + 1 : prev));
